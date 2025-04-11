@@ -1,7 +1,9 @@
-import { useState , useEffect} from "react";
+import { useState , useEffect, useContext} from "react";
+import {color} from "./cambiarColor"
 export default function UseState() {
     let[contador, setContador] = useState(0);// valor inicial en el que arranca el contador 
     let[mostrar,setMostrar]= useState(true);
+    console.log(useContext(color));
     //let contador = 0;
     useEffect(()=>{
         console.log(contador);
